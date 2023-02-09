@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h2,
+h3 {
+  color: #444444;
+}
+
+.App {
+  transition: all 0.25s linear;
+}
+.library-active {
+  margin-left: 30%;
+}
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";

@@ -1,0 +1,62 @@
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border: none;
+  border-radius: 20px;
+}
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 18rem;
+  overflow-y: scroll;
+  box-shadow: 2px 2px 40px #c7c7c7;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+  background: #fff;
+  h2 {
+    padding: 2rem;
+  }
+}
+.library-song {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    background: rgb(208, 199, 233);
+  }
+  img {
+    width: 30%;
+  }
+  .song-desciption {
+    padding-left: 2rem;
+    h3 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.75rem;
+    }
+  }
+}
+.selected {
+  background: rgb(205, 192, 243);
+}
+.active-library {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
